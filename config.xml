@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:rim="http://www.blackberry.com/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "org.rbc.jmodb"
+        versionCode="1" 
+        version   = "1.0.0"
+		rim:header="RIM-Widget: rim/widget">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>RBC JMODB</name>
+
+    <description>
+        RBC JM ODB
+    </description>
+
+    <author href="http://www.rbc.org" email="info_sys_intl@rbc.org">
+        IS Team, RBC Ministries Asia Ltd
+    </author>
+	
+	  <feature name="http://api.phonegap.com/1.0/device" />
+		<preference name="permissions" value="none"/>
+	 
+	<preference name="phonegap-version" value="all" /> <!-- all: current version of PhoneGap -->
+    <preference name="target-device" value="universal" /> <!-- all: possible values handset, tablet, or universal -->
+    <preference name="ios-statusbarstyle" value="black-opaque" /> <!-- ios: black-translucent will appear black because the PhoneGap webview doesn't go beneath the status bar -->
+    <preference name="exit-on-suspend" value="false" /> <!-- ios: if set to true, app will terminate when home button is pressed -->
+    <preference name="android-minSdkVersion" value="9" /> <!-- android: MIN SDK version supported on the target device. MAX version is blank by default. -->
+    <preference name="android-installLocation" value="auto" /> <!-- android: app install location. 'auto' will choose. 'internalOnly' is device memory. 'preferExternal' is SDCard. -->
+
+	<plugin name="Share" value="org.apache.cordova.plugins.Share" />
+
+  <access origin="*"/> <!-- allow local pages -->
+	<license>
+    Copyright (c) 2013 RBC Ministries Ltd.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+    EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+    MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+    NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS
+    BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN
+    ACTION OF CONTRACT, INSULT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
+	</license>
+</widget>

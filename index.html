@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>View Source</title>
+        <link rel="stylesheet" href="css/odb.css" />
+				<link rel="stylesheet" href="css/structure.css" />
+	
+				<script type="text/javascript" charset="utf-8" src="js/jquery-1.8.2.min.js"></script>
+				<script type="text/javascript" charset="utf-8" src="js/jquery.mobile-1.2.0.min.js"></script>
+				<script type="text/javascript" charset="utf-8" src="cordova-2.6.0.js"></script>
+				<script type="text/javascript" charset="utf-8" src="js/myscript.js"></script>
+				<link rel="stylesheet" href="css/mystyles.css" />
+    </head>
+    <body>
+        <!-- Page: home -->
+	<div id="home"
+		data-role="page"
+		data-theme="b"
+		data-title="View Source: Home">
+
+		<div data-role="content">
+			<img src="img/odb_icon.png" alt="Our Daily Bread" />
+		</div>
+		<div data-role="controlgroup">
+			<a href="#zhs" 
+				data-role="button"
+				data-icon="icon_blog"
+			>灵命日粮</a>
+			<a href="#zht" 
+				data-role="button"
+				data-icon="icon_blog"
+			>靈命日糧</a>		
+		</div><!-- links -->
+	</div><!-- page -->
+
+	<!-- Page: zhs -->
+	<div id="zhs"
+		data-theme="b"
+		data-role="page"
+		data-title="ODB: Simplified Chinese">
+		<div data-role="header"
+			data-theme="b"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Simplified Chinese</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#infozhs"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-theme="b"
+			data-role="content"
+			id="postlistzhs">
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-theme="b"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="vs_blog"
+					>灵命日粮</a></li>
+					<li><a href="#zht" 
+					data-role="button"
+					data-icon="vs_blog"
+					>靈命日糧</a></li>
+					
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+
+	<div id="blogpostzhs"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="b">
+			<a href="#zhs"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">ODB</a>
+			<h1>Post</h1>
+		</div><!-- header-->
+		<div data-role="content">
+			<div id="mypostzhs"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+
+
+	<div data-role="page"
+		id="infozhs"
+		data-theme="b"
+		>
+		<div data-role="header">
+			<h1>《灵命日粮》简介</h1>
+		</div>
+		<div data-role="content">
+			<p>英文《灵命日粮》始于1956年，如今全球有数百万的读者以《灵命日粮》作为每日的灵修材料。第一本中文《灵命日粮》于1995年出版，其中改变生命、激励人心的小品帮助读者每日阅读上帝的话语，与上帝同行，并从祂永不改变的话语中认识祂的智慧与应许。</p>
+
+<p>《灵命日粮》是RBC Ministries的主要出版刊物，以英文写作，目前已经翻译超过40种语文。除了《灵命日粮》，RBC Ministries也致力为世界各地的人们提供各种圣经材料。许多人帮助RBC Ministries 将改变生命的圣经智慧带给他人，即使是小额奉献，也能聚沙成塔。我们并没有任何机构或宗派提供基金或资助。</p>
+
+<p>在一些地区，人们可以透过广播收听《灵命日粮》，当中的内容像一股甘泉流入听众的心田，带领他们亲近耶稣，激励他们在主爱中，信靠顺服，并敬拜上帝。</p>
+
+<p>今天，读者们除了可以透过邮寄的方式收到《灵命日粮》季刊之外，也可以使用电邮或手机应用程式阅读《灵命日粮》。</p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+				data-theme="b"
+				data-icon="back"
+			></a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+				data-theme="b"
+				data-icon="home"
+			></a>
+		</div>
+	</div>
+	
+	<!-- Page: zht -->
+	<div id="zht"
+		data-theme="b"
+		data-role="page"
+		data-title="ODB: Traditional Chinese">
+		<div data-role="header"
+			data-theme="b"
+			data-position="fixed"
+			data-id="vs_header">
+			<h1>Traditional Chinese</h1>
+			<a href="#home"
+				data-icon="home"
+				data-iconpos="notext"
+				>Home</a>
+			<a href="#infozht"
+				data-icon="info"
+				data-iconpos="notext"
+				data-rel="dialog"
+				>Info</a>
+		</div><!-- header -->
+		<div data-theme="b"
+			data-role="content"
+			id="postlistzht">
+		</div><!-- content -->
+		<div data-role="footer"
+			data-position="fixed"
+			data-theme="b"
+			data-id="vs_footer">
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#home" 
+					data-role="button"
+					data-icon="home"
+					>Home</a></li>
+					<li><a href="#zhs" 
+					data-role="button"
+					data-icon="vs_blog"
+					>灵命日粮</a></li>
+					<li><a href="#" 
+					data-role="button"
+					data-icon="vs_blog"
+					>靈命日糧</a></li>
+					
+				</ul>
+			</div><!-- navbar -->
+		</div><!-- footer -->
+	</div><!-- page -->
+
+	<div id="blogpostzht"
+		data-role="page">
+		<div data-role="header"
+			data-position="fixed"
+			data-theme="b">
+			<a href="#zht"
+				data-icon="back"
+				data-iconpos="notext"
+				data-direction="reverse">ODB</a>
+			<h1>Post</h1>
+		</div><!-- header-->
+		<div data-role="content">
+			<div id="mypostzht"></div>
+		</div><!-- content -->
+	</div><!-- page -->
+
+
+	<div data-role="page"
+		id="infozht"
+		data-theme="b"
+		>
+		<div data-role="header">
+			<h1>《靈命日糧》（Our Daily Bread）簡介</h1>
+		</div>
+		<div data-role="content">
+			<p>靈命日糧》（Our Daily Bread）是 RBC Ministries 所出版的靈修材料。自 1956 年 4 月第一本 Our Daily Bread 出版以來，經歷上帝五十多年的帶領與供應，如今除了英文以外，已經翻譯成全球四十多種語言，包括：中文（簡、繁體版）、西班牙文、法文、德文、俄文、波蘭文、馬來文、淡米爾文、日文、印尼文、泰文等等，供應全球千萬讀者每日靈修的需要。</p>
+
+<p>《靈命日糧》讓上帝的兒女每天都可以領受祂新鮮活潑的供應，使靈命生根建造，奠基於上帝永恆不變的話語之上。《靈命日糧》幫助上帝的子民每天用一段經文靈修，透過貼近生活的短文，進入更深一層的默想與禱告，從而應用並實踐於每天生活之中，成為主耶穌基督福音的美好見證。</p>
+			<a href="#"
+				data-role="button"
+				data-inline="true"
+				data-rel="back"
+				data-theme="b"
+				data-icon="back"
+			></a>
+			<a href="#home"
+				data-role="button"
+				data-inline="true"
+				data-theme="b"
+				data-icon="home"
+			></a>
+		</div>
+	</div>
+	
+<script src="http://zhs.devkp.goldfinch.rbcintl.org/?json=get_recent_posts&count=7&callback=listPostszhs" type="text/javascript"></script>
+
+<script src="http://zht.devkp.goldfinch.rbcintl.org/?json=get_recent_posts&count=7&callback=listPostszht" type="text/javascript"></script>
+	
+    </body>
+</html>
